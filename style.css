@@ -16,7 +16,9 @@ header {
     align-items: center;
     height: 90px;
 }
-
+header .fa-bars{
+    display: none;
+}
 nav ul {
     padding: 20px;
     display: flex;
@@ -47,6 +49,7 @@ nav li:hover {
 
 .first {
     background-image: url(./assets/download.webp);
+    width: 100%;
     background-position: center;
     height: 900px;
     display: flex;
@@ -1283,4 +1286,17 @@ textarea {
     margin-left: 20px;
     margin-top: 55px;
     background: transparent;
+}
+@media (max-width: 970px){
+    header nav {
+        display: none;
+    }
+    header{
+        padding: 40px;
+        display: flex;
+        justify-content: space-between;
+    }
+    header .fa-bars{
+        display: block;
+    }
 }

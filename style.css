@@ -9,21 +9,23 @@
 
 header {
     display: flex;
-    position: fixed;
+    position: sticky;
+    top: 0;
     width: 100%;
     z-index: 5;
     background-color: white;
     justify-content: space-around;
     align-items: center;
-    height: 90px;
 }
 
-header .menu-icon{
+header .menu-icon {
     display: none;
 }
-header .fa-magnifying-glass{
+
+header .fa-magnifying-glass {
     padding: 0 10px 0 10px;
 }
+
 nav ul {
     padding: 20px;
     display: flex;
@@ -41,7 +43,7 @@ nav li {
 nav a {
     text-decoration: none;
     color: black;
-    
+
 }
 
 nav a:active {
@@ -51,6 +53,8 @@ nav a:active {
 nav li:hover {
     border-radius: 20px;
     border-color: rgb(150, 150, 250);
+    border-width: 1px;
+    border-style: solid;
     cursor: pointer;
 }
 
@@ -113,6 +117,7 @@ nav li:hover {
 }
 
 .dotted-circle {
+    margin: 0 auto;
     width: 600px;
     height: 600px;
     position: relative;
@@ -120,7 +125,13 @@ nav li:hover {
     border-radius: 50%;
     animation: rotateDots 20s linear infinite;
     border: 4px dashed transparent;
-    border-color: #b8b6b6;
+    border-color: #dedddd;
+}
+
+.third {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @keyframes rotateDots {
@@ -1296,4 +1307,18 @@ textarea {
     margin-left: 20px;
     margin-top: 55px;
     background: transparent;
+}
+
+@media (max-width: 600px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .third {
+        display: none;
+    }
+
+    .fourth {
+        display: none;
+    }
 }

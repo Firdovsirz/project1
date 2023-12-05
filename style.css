@@ -16,8 +16,12 @@ header {
     align-items: center;
     height: 90px;
 }
-header .fa-bars{
+
+header .menu-icon{
     display: none;
+}
+header .fa-magnifying-glass{
+    padding: 0 10px 0 10px;
 }
 nav ul {
     padding: 20px;
@@ -29,12 +33,14 @@ nav ul {
 nav li {
     list-style-type: none;
     padding: 0 5px;
+    border: 1px solid transparent;
+    transition: 800ms;
 }
 
 nav a {
     text-decoration: none;
     color: black;
-    transition: 800ms;
+    
 }
 
 nav a:active {
@@ -42,14 +48,17 @@ nav a:active {
 }
 
 nav li:hover {
-    border: 1px solid transparent;
     border-radius: 20px;
-    box-shadow: 2px 2px 10px rgb(150, 150, 250);
+    border-color: rgb(150, 150, 250);
+    cursor: pointer;
 }
 
 .first {
     background-image: url(./assets/download.webp);
     width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    height: 100vh;
     background-position: center;
     height: 900px;
     display: flex;
@@ -142,7 +151,7 @@ nav li:hover {
     align-items: center;
 }
 
-@keyframes breath {
+/* @keyframes breath {
 
     0%,
     100% {
@@ -152,7 +161,7 @@ nav li:hover {
     50% {
         transform: scale(1.2);
     }
-}
+} */
 
 .cloud {
     z-index: 1;
@@ -594,7 +603,7 @@ p:nth-child(2) {
     padding: 15px 30px 15px 30px;
     color: white;
     background: linear-gradient(to right, rgb(250, 194, 250), rgb(150, 150, 250));
-    border: transparent;
+    border: 1px solid transparent;
     border-radius: 30px;
     transition: 800ms;
 }
@@ -604,14 +613,15 @@ p:nth-child(2) {
     transform: scale(1.1);
     color: black;
     background: transparent;
-    border: 2px solid white;
+    /* border: 2px solid white; */
+    border-color: white;
 }
 
 .apple {
     padding: 15px 30px 15px 30px;
     color: black;
     background-color: transparent;
-    border: 2px solid white;
+    border: 1px solid white;
     border-radius: 30px;
     transition: 800ms;
 }
@@ -620,8 +630,8 @@ p:nth-child(2) {
     cursor: pointer;
     transform: scale(1.1);
     color: white;
-    border: transparent;
     background: linear-gradient(to right, rgb(250, 194, 250), rgb(150, 150, 250));
+    border-color: transparent;
 }
 
 .macbook {
@@ -1286,17 +1296,4 @@ textarea {
     margin-left: 20px;
     margin-top: 55px;
     background: transparent;
-}
-@media (max-width: 970px){
-    header nav {
-        display: none;
-    }
-    header{
-        padding: 40px;
-        display: flex;
-        justify-content: space-between;
-    }
-    header .fa-bars{
-        display: block;
-    }
 }

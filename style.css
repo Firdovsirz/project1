@@ -5,6 +5,7 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
+    transition: 800ms;
 }
 
 header {
@@ -116,16 +117,12 @@ nav li:hover {
     background-color: #424242;
 }
 
-.dotted-circle {
-    margin: 0 auto;
+.round-c{
+    animation: rotateDots 4s ease-in-out infinite;
+    position: absolute;
+    top: 150px;
     width: 600px;
     height: 600px;
-    position: relative;
-    background-color: white;
-    border-radius: 50%;
-    animation: rotateDots 20s linear infinite;
-    border: 4px dashed transparent;
-    border-color: #dedddd;
 }
 
 .third {
@@ -135,10 +132,9 @@ nav li:hover {
 }
 
 @keyframes rotateDots {
-    0% {
-        transform: rotate(0deg);
+    0%{
+        transform: rotate(90deg);
     }
-
     100% {
         transform: rotate(360deg);
     }
@@ -572,8 +568,7 @@ p:nth-child(2) {
     padding: 50px;
     margin: 0 auto;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
     background-color: #EFF1FF;
 }
 
@@ -975,6 +970,11 @@ p:nth-child(2) {
     justify-content: center;
 }
 
+.question .fa-plus:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
 .question div {
     width: 600px;
     display: flex;
@@ -990,9 +990,9 @@ p:nth-child(2) {
     width: fit-content;
     height: fit-content;
     border-radius: 50%;
-    padding: 5px;
     box-shadow: 2px 2px 10px rgb(250, 195, 250), -2px -2px 10px rgb(182, 182, 253);
 }
+
 
 .twelfth {
     display: flex;
@@ -1044,7 +1044,7 @@ p:nth-child(2) {
     margin-top: 20px;
 }
 
-.container {
+/* .container {
     border: 1px solid transparent;
     padding: 30px;
     position: absolute;
@@ -1053,7 +1053,7 @@ p:nth-child(2) {
     background-color: white;
     box-shadow: 2px 2px 10px #a2a2a2;
     width: 500px;
-}
+} */
 
 .container-head {
     opacity: 60%;
@@ -1234,6 +1234,11 @@ footer li {
     font-size: 20px;
 }
 
+.app-home li:hover {
+    cursor: pointer;
+    color: rgb(182, 182, 253);
+}
+
 .footer-line {
     margin-top: 5px;
     margin-bottom: 20px;
@@ -1297,10 +1302,15 @@ footer li {
 
 .contact-us button:hover {
     cursor: pointer;
+    transform: scale(1.1);
 }
 
 .contact-us {
     display: flex;
+}
+
+.input {
+    transition: 800ms;
 }
 
 textarea {
@@ -1309,16 +1319,186 @@ textarea {
     background: transparent;
 }
 
-@media (max-width: 600px) {
-    .menu-icon {
+textarea:hover {
+    border-color: white;
+}
+
+input:hover {
+    border-color: white;
+}
+
+@media (max-width:600px) {
+    header .menu-icon {
         display: block;
     }
 
-    .third {
+    header {
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+        padding: 60px;
+    }
+
+    header nav {
         display: none;
     }
 
-    .fourth {
+    /* .third {
         display: none;
+    } */
+
+    .first {
+        width: 300%;
+    }
+    .round-c{
+        width: 400px;
+        height: 400px;
+        transform: translateX(-50%);
+    }
+    .third{
+        transform: translateX(-50%);
+    }
+    .twelfth-images{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .sixth{
+        margin-left: 150%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .user{
+        width: 400px;
+    }
+    .seventh{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 300%;
+    }
+    .fourth{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 300%;
+        height: 1000%;
+    }
+    .middle{
+        margin-top: 300px;
+        width: 700px;
+    }
+    .one{
+        position: absolute;
+        top: 200px;
+        left: 900px;
+    }
+    .two{
+        position: absolute;
+        top: 250px;
+        left: 400px;
+    }
+    .three{
+        position: absolute;
+        top: 150px;
+        left: 700px;
+    }
+    .four{
+        position: absolute;
+        top: 200px;
+        left: 400px;
+    }
+    .five{
+        position: absolute;
+        top: 150px;
+        left: 700px;
+    }
+    .six{
+        position: absolute;
+        top: 200px;
+        left: 1200px;
+    }
+    .nothing{
+        width: 300%;
+    }
+    .fifth{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .eleventh{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 300%;
+
+    }
+    footer{
+        width: 300%;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .empty{
+        width: 300%;
+    }
+    .f-list{
+        display: flex;
+        justify-content: space-between;
+    }
+    .f-list div{
+        margin-right: 100px;
+    }
+    .second{
+        margin-left: 150%;
+        width: 700px;
+    }
+    .third{
+        margin-left: 50%;
+    }
+    .round-c{
+        width: 600px;
+        height: 600px;
+        margin-left: 410%;
+    }
+    .third div{
+        width: 300px;
+    }
+    .second{
+        margin-left: 90%;
+    }
+    .twelfth{
+        margin-left: 150%;
+    }
+    .twelfth-text{
+        width: 600px;
+        margin-bottom: 30px;
+    }
+    .ninth{
+        width: 300%;
+    }
+    .fifth{
+        margin-left: 100%;
+        width: 700px;
+    }
+    .eighth{
+        margin-left: 100%;
+        width: 700px;
+    }
+    .tenth{
+        margin-left: 100%;
+        width: 700px;
+    }
+    .member-images{
+        margin-left: 70px;
     }
 }

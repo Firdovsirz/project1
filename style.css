@@ -117,7 +117,7 @@ nav li:hover {
     background-color: #424242;
 }
 
-.round-c{
+.round-c {
     animation: rotateDots 4s ease-in-out infinite;
     position: absolute;
     top: 150px;
@@ -132,9 +132,10 @@ nav li:hover {
 }
 
 @keyframes rotateDots {
-    0%{
+    0% {
         transform: rotate(90deg);
     }
+
     100% {
         transform: rotate(360deg);
     }
@@ -1326,10 +1327,12 @@ textarea:hover {
 input:hover {
     border-color: white;
 }
-.f-list{
+
+.f-list {
     display: flex;
 }
-.f-list div{
+
+.f-list div {
     margin-right: 50px;
 }
 
@@ -1354,39 +1357,48 @@ input:hover {
     } */
 
     .first {
+        background-size: 100%;
         width: 300%;
+        height: 200vh;
     }
-    .round-c{
+
+    .round-c {
         width: 400px;
         height: 400px;
         transform: translateX(-50%);
     }
-    .third{
+
+    .third {
         transform: translateX(-50%);
     }
-    .twelfth-images{
+
+    .twelfth-images {
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
-    .sixth{
+
+    .sixth {
         margin-left: 150%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    .user{
+
+    .user {
         width: 400px;
     }
-    .seventh{
+
+    .seventh {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         width: 300%;
     }
-    .fourth{
+
+    .fourth {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -1394,50 +1406,60 @@ input:hover {
         width: 300%;
         height: 1000%;
     }
-    .middle{
+
+    .middle {
         margin-top: 300px;
         width: 700px;
     }
-    .one{
+
+    .one {
         position: absolute;
         top: 200px;
         left: 900px;
     }
-    .two{
+
+    .two {
         position: absolute;
         top: 250px;
         left: 400px;
     }
-    .three{
+
+    .three {
         position: absolute;
         top: 150px;
         left: 700px;
     }
-    .four{
+
+    .four {
         position: absolute;
         top: 200px;
         left: 400px;
     }
-    .five{
+
+    .five {
         position: absolute;
         top: 150px;
         left: 700px;
     }
-    .six{
+
+    .six {
         position: absolute;
         top: 200px;
         left: 1200px;
     }
-    .nothing{
+
+    .nothing {
         width: 300%;
     }
-    .fifth{
+
+    .fifth {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    .eleventh{
+
+    .eleventh {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -1445,410 +1467,520 @@ input:hover {
         width: 300%;
 
     }
-    footer{
+
+    footer {
         width: 300%;
     }
-    .footer{
+
+    .footer {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    .empty{
+
+    .empty {
         width: 300%;
     }
-    .f-list{
+
+    .f-list {
         display: flex;
         justify-content: space-between;
     }
-    .f-list div{
+
+    .f-list div {
         margin-right: 100px;
     }
-    .second{
+
+    .second {
         margin-left: 150%;
         width: 700px;
     }
-    .third{
+
+    .third {
         margin-left: 50%;
     }
-    .round-c{
+
+    .round-c {
         width: 600px;
         height: 600px;
         margin-left: 410%;
     }
-    .third div{
+
+    .third div {
         width: 300px;
     }
-    .second{
+
+    .second {
         margin-left: 90%;
     }
-    .twelfth{
+
+    .twelfth {
         margin-left: 150%;
     }
-    .twelfth-text{
+
+    .twelfth-text {
         width: 600px;
         margin-bottom: 30px;
     }
-    .ninth{
+
+    .ninth {
         width: 300%;
     }
-    .fifth{
+
+    .fifth {
         margin-left: 100%;
         width: 700px;
     }
-    .eighth{
+
+    .eighth {
         margin-left: 100%;
         width: 700px;
     }
-    .tenth{
+
+    .tenth {
         margin-left: 100%;
         width: 700px;
     }
-    .member-images{
+
+    .member-images {
         margin-left: 70px;
     }
 }
-@media screen and (min-width:600px) and (max-width:1400px){
-    header{
+
+@media screen and (min-width:600px) and (max-width:1400px) {
+    header {
         display: flex;
         justify-content: space-between;
         position: fixed;
         padding: 100px;
     }
-    header li{
+
+    header li {
         font-size: 30px;
         margin-right: 40px;
     }
-    .logo{
+
+    .logo {
         width: 150px;
         height: 50px;
     }
-    footer{
+
+    footer {
         min-width: 300%;
         max-width: 300%;
         width: 300%;
     }
-    .first{
+
+    .first {
         background-size: 100%;
         width: 300%;
         height: 400vh;
     }
-    .first h1{
+
+    .first h1 {
         font-size: 600px;
     }
-    .first button{
+
+    .first button {
         padding: 40px 80px;
         font-size: 40px;
         border-radius: 70px;
     }
-    .footer-text p:first-child{
+
+    .footer-text p:first-child {
         font-size: 80px;
     }
-    .footer-text p:not(:first-child){
+
+    .footer-text p:not(:first-child) {
         font-size: 40px;
     }
-    .footer-email input{
+
+    .footer-email input {
         width: 800px;
         padding: 20px 200px 20px 20px;
         font-size: 30px;
     }
-    .footer-email button{
+
+    .footer-email button {
         padding: 25px 60px;
         font-size: 25px;
         position: absolute;
         left: 650px;
     }
-    .app-home p:first-child{
+
+    .app-home p:first-child {
         font-size: 50px;
     }
-    .app-home ul li{
+
+    .app-home ul li {
         font-size: 25px;
     }
-    .app-home ul{
+
+    .app-home ul {
         margin-right: 200px;
     }
-    .support p:first-child{
+
+    .support p:first-child {
         font-size: 50px;
     }
-    .support ul li{
+
+    .support ul li {
         font-size: 25px;
     }
-    .footer-line-second{
+
+    .footer-line-second {
         width: 5cm;
     }
-    .footer-line{
+
+    .footer-line {
         width: 5cm;
     }
-    .contact-us p{
+
+    .contact-us p {
         font-size: 50px;
     }
-    .footer-line-third{
+
+    .footer-line-third {
         width: 5cm;
     }
-    .contact-us input{
+
+    .contact-us input {
         width: 800px;
         padding: 40px;
         font-size: 25px;
     }
-    .send-btn{
-        padding: 20px 40px 20px 40px ;
+
+    .send-btn {
+        padding: 20px 40px 20px 40px;
         font-size: 25px;
         border-radius: 50px;
     }
-    .empty{
+
+    .empty {
         min-width: 300%;
         max-width: 1000%;
     }
-    .tenth-line{
+
+    .tenth-line {
         width: 5cm;
     }
-    .round-c{
+
+    .round-c {
         width: 400px;
         height: 400px;
     }
-    .third ul{
+
+    .third ul {
         display: none;
     }
-    .third div{
+
+    .third div {
         display: none;
     }
-    .twelfth{
+
+    .twelfth {
         width: 300%;
     }
-    .twelfth-text{
+
+    .twelfth-text {
         margin: 30px auto;
     }
-    .question-part{
+
+    .question-part {
         display: flex;
         justify-content: space-between;
     }
-    .twelfth-text p:first-child{
+
+    .twelfth-text p:first-child {
         font-size: 70px;
     }
-    .twelfth-text p:not(:first-child){
+
+    .twelfth-text p:not(:first-child) {
         font-size: 35px;
     }
-    .ninth-line{
+
+    .ninth-line {
         width: 5cm;
     }
-    .eleventh{
+
+    .eleventh {
         width: 300%;
     }
-    .question div{
+
+    .question div {
         padding: 40px;
         width: 1200px;
         font-size: 30px;
     }
-    .question-img{
+
+    .question-img {
         width: 1000px;
         height: 1000px;
     }
-    .eleventh-text p:first-child{
+
+    .eleventh-text p:first-child {
         font-size: 70px;
     }
-    .eleventh-text p:not(:first-child){
+
+    .eleventh-text p:not(:first-child) {
         font-size: 35px;
     }
-    .eighth-line{
+
+    .eighth-line {
         width: 5cm;
     }
-    .tenth{
+
+    .tenth {
         margin-left: 80%;
         width: 150%;
     }
-    .seventh-line{
+
+    .seventh-line {
         width: 5cm;
     }
-    .tenth-text p:first-child{
+
+    .tenth-text p:first-child {
         font-size: 70px;
     }
-    .tenth-text p:not(:first-child){
+
+    .tenth-text p:not(:first-child) {
         font-size: 35px;
     }
-    .member-images img{
+
+    .member-images img {
         width: 400px;
         height: 500px;
     }
-    .ninth{
+
+    .ninth {
         width: 300%;
         height: 300vh;
     }
-    .ninth-text p:first-child{
+
+    .ninth-text p:first-child {
         font-size: 70px;
     }
-    .sixth-line{
+
+    .sixth-line {
         width: 5cm;
     }
-    .ninth-text p:not(:first-child){
+
+    .ninth-text p:not(:first-child) {
         font-size: 35px;
     }
-    .basic-head{
+
+    .basic-head {
         padding: 100px 200px;
     }
-    .premium-head{
+
+    .premium-head {
         padding: 100px 200px;
     }
-    .exclusive-head{
+
+    .exclusive-head {
         padding: 100px 200px;
     }
-    .exclusive-head p:first-child{
+
+    .exclusive-head p:first-child {
         font-size: 30px;
     }
-    .premium-head p:first-child{
+
+    .premium-head p:first-child {
         font-size: 30px;
     }
-    .basic-head p:first-child{
+
+    .basic-head p:first-child {
         font-size: 30px;
     }
-    .dollar{
+
+    .dollar {
         font-size: 80px;
     }
-    .month{
+
+    .month {
         font-size: 40px;
     }
-    .basic-body p{
+
+    .basic-body p {
         font-size: 30px;
         margin-bottom: 20px;
     }
-    .basic-body button{
+
+    .basic-body button {
         padding: 20px 40px;
         font-size: 30px;
         border-radius: 40px;
     }
-    .premium-body p{
+
+    .premium-body p {
         font-size: 30px;
         margin-bottom: 25px;
     }
-    .premium-body button{
+
+    .premium-body button {
         padding: 20px 40px;
         font-size: 30px;
         border-radius: 40px;
     }
-    .premium{
+
+    .premium {
         box-shadow: 2px 2px 10px #959595;
     }
-    .exclusive-body p{
+
+    .exclusive-body p {
         font-size: 30px;
         margin-bottom: 20px;
     }
-    .exclusive-body button{
+
+    .exclusive-body button {
         padding: 20px 40px;
         font-size: 30px;
         border-radius: 40px;
     }
-    .eighth{
+
+    .eighth {
         width: 300%;
         height: 200vh;
     }
-    .eighth p:first-child{
+
+    .eighth p:first-child {
         font-size: 70px;
     }
-    .eighth p:not(:first-child){
+
+    .eighth p:not(:first-child) {
         font-size: 35px;
     }
-    .fifth-line{
+
+    .fifth-line {
         width: 5cm;
     }
-    .mobile{
+
+    .mobile {
         width: 1100px;
         height: 1200px;
         left: -550px;
     }
-    .first_img{
+
+    .first_img {
         width: 560px;
         height: 930px;
         top: 85px;
         left: -1000px;
     }
-    .second_img{
+
+    .second_img {
         width: 560px;
         height: 930px;
         position: absolute;
         top: 85px;
         left: -285px;
     }
-    .third_img{
+
+    .third_img {
         width: 560px;
         height: 930px;
         top: 85px;
         left: 400px;
     }
-    .seventh{
+
+    .seventh {
         width: 300%;
         height: 200vh;
     }
-    .now{
+
+    .now {
         font-size: 70px;
         margin-bottom: 20px;
     }
-    .app-galary{
+
+    .app-galary {
         font-size: 50px;
     }
-    .seventh-text{
+
+    .seventh-text {
         font-size: 50px;
         width: 1700px;
         margin-bottom: 100px;
     }
-    .fourth-line{
+
+    .fourth-line {
         width: 5cm;
     }
-    .android{
+
+    .android {
         padding: 40px 70px;
         font-size: 30px;
         border-radius: 60px;
     }
-    .apple{
+
+    .apple {
         padding: 40px 70px;
         font-size: 30px;
         border-radius: 60px;
     }
-    .macbook{
+
+    .macbook {
         width: 1700px;
         height: 1000px;
     }
-    .sixth{
+
+    .sixth {
         width: 300%;
     }
-    .video{
+
+    .video {
         width: 2000px;
         height: 1000px;
     }
-    .fa-play{
+
+    .fa-play {
         font-size: 70px;
         position: absolute;
         top: 50%;
         left: 50%;
     }
-    .video_icon p{
+
+    .video_icon p {
         position: absolute;
         top: 650px;
         left: 50%;
     }
-    .user p{
+
+    .user p {
         font-size: 40px;
         margin-bottom: 20px;
     }
-    .user-1{
+
+    .user-1 {
         width: 200px;
         height: 200px;
     }
-    .fifth{
+
+    .fifth {
         width: 300%;
     }
-    .fifth p:first-child{
+
+    .fifth p:first-child {
         font-size: 80px;
     }
-    .fifth p:not(:first-child){
+
+    .fifth p:not(:first-child) {
         font-size: 40px;
     }
-    .third-line{
+
+    .third-line {
         width: 5cm;
     }
-    .fa-clone, .fa-clock, .fa-folder{
+
+    .fa-clone,
+    .fa-clock,
+    .fa-folder {
         font-size: 60px;
         padding: 30px;
     }
-    .fourth{
+
+    .fourth {
         width: 300%;
         height: 400vh;
         display: flex;
@@ -1856,29 +1988,36 @@ input:hover {
         justify-content: center;
         align-items: center;
     }
-    .middle{
+
+    .middle {
         margin-top: 300px;
     }
-    .star{
+
+    .star {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    .middle p:first-child{
+
+    .middle p:first-child {
         font-size: 80px;
     }
-    .middle p:not(:first-child){
+
+    .middle p:not(:first-child) {
         font-size: 40px;
     }
-    .third{
+
+    .third {
         width: 300%;
     }
-    .round-c{
+
+    .round-c {
         width: 900px;
         height: 900px;
     }
-    .phone{
+
+    .phone {
         width: 400px;
         height: 800px;
         left: 1700px;

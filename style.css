@@ -30,7 +30,7 @@ header .fa-magnifying-glass {
 nav ul {
     padding: 20px;
     display: flex;
-    width: 900px;
+    /* width: 900px; */
     justify-content: space-between;
 }
 
@@ -57,6 +57,10 @@ nav li:hover {
     border-width: 1px;
     border-style: solid;
     cursor: pointer;
+}
+
+.for-media {
+    display: none;
 }
 
 .first {
@@ -1336,691 +1340,222 @@ input:hover {
     margin-right: 50px;
 }
 
-@media (max-width:600px) {
-    header .menu-icon {
-        display: block;
-    }
-
-    header {
-        display: flex;
-        justify-content: space-between;
-        position: fixed;
-        padding: 60px;
-    }
-
-    header nav {
+@media (max-width: 1200px) {
+    .phone {
         display: none;
-    }
-
-    /* .third {
-        display: none;
-    } */
-
-    .first {
-        background-size: 100%;
-        width: 300%;
-        height: 200vh;
     }
 
     .round-c {
-        width: 400px;
-        height: 400px;
-        transform: translateX(-50%);
+        display: none;
     }
 
-    .third {
-        transform: translateX(-50%);
+    .third div:not(:first-child) {
+        /* display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transform: translateX(-10%); */
+        display: none;
+    }
+
+    .icons {
+        display: none;
+    }
+
+    .for-media {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .for-media ul li {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 60em;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .for-media ul li i {
+        font-size: 20px;
+        padding: 20px;
+        border-radius: 50%;
+        margin-bottom: 20px;
+        border: 1px solid transparent;
+        animation: breath 4s ease-in-out infinite;
+        box-shadow: 2px 2px 10px rgb(250, 195, 250), -2px -2px 10px rgb(182, 182, 253);
+    }
+
+    .third img {
+        display: none;
+    }
+
+    .first_text,
+    .second_text,
+    .third_text,
+    .fourth_text {
+        display: none;
+    }
+
+    .fourth {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: fit-content;
+    }
+
+    .fourth-images {
+        display: none;
+    }
+
+    .seventh {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .seventh-first-part {
+        margin-bottom: 20px;
+    }
+
+    .question-part {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .member-images {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .member-images img {
+        margin-top: 20px;
     }
 
     .twelfth-images {
         display: flex;
         flex-direction: column;
         justify-content: center;
-    }
-
-    .sixth {
-        margin-left: 150%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
         align-items: center;
-    }
-
-    .user {
-        width: 400px;
-    }
-
-    .seventh {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 300%;
-    }
-
-    .fourth {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 300%;
-        height: 1000%;
-    }
-
-    .middle {
-        margin-top: 300px;
-        width: 700px;
-    }
-
-    .one {
-        position: absolute;
-        top: 200px;
-        left: 900px;
-    }
-
-    .two {
-        position: absolute;
-        top: 250px;
-        left: 400px;
-    }
-
-    .three {
-        position: absolute;
-        top: 150px;
-        left: 700px;
-    }
-
-    .four {
-        position: absolute;
-        top: 200px;
-        left: 400px;
-    }
-
-    .five {
-        position: absolute;
-        top: 150px;
-        left: 700px;
-    }
-
-    .six {
-        position: absolute;
-        top: 200px;
-        left: 1200px;
-    }
-
-    .nothing {
-        width: 300%;
-    }
-
-    .fifth {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .eleventh {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 300%;
-
-    }
-
-    footer {
-        width: 300%;
-    }
-
-    .footer {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .empty {
-        width: 300%;
-    }
-
-    .f-list {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .f-list div {
-        margin-right: 100px;
-    }
-
-    .second {
-        margin-left: 150%;
-        width: 700px;
-    }
-
-    .third {
-        margin-left: 50%;
-    }
-
-    .round-c {
-        width: 600px;
-        height: 600px;
-        margin-left: 410%;
-    }
-
-    .third div {
-        width: 300px;
-    }
-
-    .second {
-        margin-left: 90%;
-    }
-
-    .twelfth {
-        margin-left: 150%;
-    }
-
-    .twelfth-text {
-        width: 600px;
-        margin-bottom: 30px;
-    }
-
-    .ninth {
-        width: 300%;
-    }
-
-    .fifth {
-        margin-left: 100%;
-        width: 700px;
-    }
-
-    .eighth {
-        margin-left: 100%;
-        width: 700px;
-    }
-
-    .tenth {
-        margin-left: 100%;
-        width: 700px;
-    }
-
-    .member-images {
-        margin-left: 70px;
-    }
-}
-
-@media screen and (min-width:600px) and (max-width:1400px) {
-    header {
-        display: flex;
-        justify-content: space-between;
-        position: fixed;
-        padding: 100px;
-    }
-
-    header li {
-        font-size: 30px;
-        margin-right: 40px;
-    }
-
-    .logo {
-        width: 150px;
-        height: 50px;
-    }
-
-    footer {
-        min-width: 300%;
-        max-width: 300%;
-        width: 300%;
-    }
-
-    .first {
-        background-size: 100%;
-        width: 300%;
-        height: 400vh;
-    }
-
-    .first h1 {
-        font-size: 600px;
-    }
-
-    .first button {
-        padding: 40px 80px;
-        font-size: 40px;
-        border-radius: 70px;
-    }
-
-    .footer-text p:first-child {
-        font-size: 80px;
-    }
-
-    .footer-text p:not(:first-child) {
-        font-size: 40px;
-    }
-
-    .footer-email input {
-        width: 800px;
-        padding: 20px 200px 20px 20px;
-        font-size: 30px;
-    }
-
-    .footer-email button {
-        padding: 25px 60px;
-        font-size: 25px;
-        position: absolute;
-        left: 650px;
-    }
-
-    .app-home p:first-child {
-        font-size: 50px;
-    }
-
-    .app-home ul li {
-        font-size: 25px;
-    }
-
-    .app-home ul {
-        margin-right: 200px;
-    }
-
-    .support p:first-child {
-        font-size: 50px;
-    }
-
-    .support ul li {
-        font-size: 25px;
-    }
-
-    .footer-line-second {
-        width: 5cm;
-    }
-
-    .footer-line {
-        width: 5cm;
-    }
-
-    .contact-us p {
-        font-size: 50px;
-    }
-
-    .footer-line-third {
-        width: 5cm;
-    }
-
-    .contact-us input {
-        width: 800px;
-        padding: 40px;
-        font-size: 25px;
-    }
-
-    .send-btn {
-        padding: 20px 40px 20px 40px;
-        font-size: 25px;
-        border-radius: 50px;
-    }
-
-    .empty {
-        min-width: 300%;
-        max-width: 1000%;
-    }
-
-    .tenth-line {
-        width: 5cm;
-    }
-
-    .round-c {
-        width: 400px;
-        height: 400px;
-    }
-
-    .third ul {
-        display: none;
-    }
-
-    .third div {
-        display: none;
-    }
-
-    .twelfth {
-        width: 300%;
-    }
-
-    .twelfth-text {
-        margin: 30px auto;
-    }
-
-    .question-part {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .twelfth-text p:first-child {
-        font-size: 70px;
-    }
-
-    .twelfth-text p:not(:first-child) {
-        font-size: 35px;
-    }
-
-    .ninth-line {
-        width: 5cm;
-    }
-
-    .eleventh {
-        width: 300%;
-    }
-
-    .question div {
-        padding: 40px;
-        width: 1200px;
-        font-size: 30px;
-    }
-
-    .question-img {
-        width: 1000px;
-        height: 1000px;
-    }
-
-    .eleventh-text p:first-child {
-        font-size: 70px;
-    }
-
-    .eleventh-text p:not(:first-child) {
-        font-size: 35px;
-    }
-
-    .eighth-line {
-        width: 5cm;
-    }
-
-    .tenth {
-        margin-left: 80%;
-        width: 150%;
-    }
-
-    .seventh-line {
-        width: 5cm;
-    }
-
-    .tenth-text p:first-child {
-        font-size: 70px;
-    }
-
-    .tenth-text p:not(:first-child) {
-        font-size: 35px;
-    }
-
-    .member-images img {
-        width: 400px;
-        height: 500px;
-    }
-
-    .ninth {
-        width: 300%;
-        height: 300vh;
-    }
-
-    .ninth-text p:first-child {
-        font-size: 70px;
-    }
-
-    .sixth-line {
-        width: 5cm;
-    }
-
-    .ninth-text p:not(:first-child) {
-        font-size: 35px;
-    }
-
-    .basic-head {
-        padding: 100px 200px;
-    }
-
-    .premium-head {
-        padding: 100px 200px;
-    }
-
-    .exclusive-head {
-        padding: 100px 200px;
-    }
-
-    .exclusive-head p:first-child {
-        font-size: 30px;
-    }
-
-    .premium-head p:first-child {
-        font-size: 30px;
-    }
-
-    .basic-head p:first-child {
-        font-size: 30px;
-    }
-
-    .dollar {
-        font-size: 80px;
-    }
-
-    .month {
-        font-size: 40px;
-    }
-
-    .basic-body p {
-        font-size: 30px;
-        margin-bottom: 20px;
-    }
-
-    .basic-body button {
-        padding: 20px 40px;
-        font-size: 30px;
-        border-radius: 40px;
-    }
-
-    .premium-body p {
-        font-size: 30px;
-        margin-bottom: 25px;
-    }
-
-    .premium-body button {
-        padding: 20px 40px;
-        font-size: 30px;
-        border-radius: 40px;
-    }
-
-    .premium {
-        box-shadow: 2px 2px 10px #959595;
-    }
-
-    .exclusive-body p {
-        font-size: 30px;
-        margin-bottom: 20px;
-    }
-
-    .exclusive-body button {
-        padding: 20px 40px;
-        font-size: 30px;
-        border-radius: 40px;
-    }
-
-    .eighth {
-        width: 300%;
-        height: 200vh;
-    }
-
-    .eighth p:first-child {
-        font-size: 70px;
-    }
-
-    .eighth p:not(:first-child) {
-        font-size: 35px;
-    }
-
-    .fifth-line {
-        width: 5cm;
-    }
-
-    .mobile {
-        width: 1100px;
-        height: 1200px;
-        left: -550px;
-    }
-
-    .first_img {
-        width: 560px;
-        height: 930px;
-        top: 85px;
-        left: -1000px;
-    }
-
-    .second_img {
-        width: 560px;
-        height: 930px;
-        position: absolute;
-        top: 85px;
-        left: -285px;
-    }
-
-    .third_img {
-        width: 560px;
-        height: 930px;
-        top: 85px;
-        left: 400px;
-    }
-
-    .seventh {
-        width: 300%;
-        height: 200vh;
-    }
-
-    .now {
-        font-size: 70px;
-        margin-bottom: 20px;
-    }
-
-    .app-galary {
-        font-size: 50px;
-    }
-
-    .seventh-text {
-        font-size: 50px;
-        width: 1700px;
-        margin-bottom: 100px;
-    }
-
-    .fourth-line {
-        width: 5cm;
-    }
-
-    .android {
-        padding: 40px 70px;
-        font-size: 30px;
-        border-radius: 60px;
-    }
-
-    .apple {
-        padding: 40px 70px;
-        font-size: 30px;
-        border-radius: 60px;
-    }
-
-    .macbook {
-        width: 1700px;
-        height: 1000px;
-    }
-
-    .sixth {
-        width: 300%;
     }
 
     .video {
-        width: 2000px;
-        height: 1000px;
+        width: 40em;
     }
 
-    .fa-play {
-        font-size: 70px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
+    .mobile {
+        display: none;
     }
 
-    .video_icon p {
-        position: absolute;
-        top: 650px;
-        left: 50%;
+    .macbook {
+        width: 40em;
     }
 
-    .user p {
-        font-size: 40px;
-        margin-bottom: 20px;
-    }
-
-    .user-1 {
-        width: 200px;
-        height: 200px;
-    }
-
-    .fifth {
-        width: 300%;
-    }
-
-    .fifth p:first-child {
-        font-size: 80px;
-    }
-
-    .fifth p:not(:first-child) {
-        font-size: 40px;
-    }
-
-    .third-line {
-        width: 5cm;
-    }
-
-    .fa-clone,
-    .fa-clock,
-    .fa-folder {
-        font-size: 60px;
-        padding: 30px;
-    }
-
-    .fourth {
-        width: 300%;
-        height: 400vh;
-        display: flex;
+    .eighth-images div {
+        /* display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center; */
+        display: none;
+    }
+
+    .first h1 {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        width: 50em;
+    }
+
+    .first {
+        width: 50em;
+        background-size: 50em;
+    }
+
+    .second {
+        width: 50em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .third {
+        width: 40em;
+    }
+
+    .for-media {
+        display: flex;
         justify-content: center;
         align-items: center;
     }
 
     .middle {
-        margin-top: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .star {
         display: flex;
-        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
-    .middle p:first-child {
-        font-size: 80px;
+    .fourth {
+        width: 50em;
     }
 
-    .middle p:not(:first-child) {
-        font-size: 40px;
+    .nothing {
+        width: 50em;
     }
 
-    .third {
-        width: 300%;
+    .fifth {
+        width: 50em;
     }
 
-    .round-c {
-        width: 900px;
-        height: 900px;
+    .sixth {
+        width: 50em;
     }
 
-    .phone {
-        width: 400px;
-        height: 800px;
-        left: 1700px;
-        transform: translateX(-50%);
+    .seventh {
+        width: 50em;
+    }
+
+    .eighth {
+        display: none;
+    }
+
+    .ninth {
+        width: 50em;
+    }
+
+    .tenth {
+        width: 50em;
+    }
+
+    .eleventh {
+        width: 50em;
+    }
+
+    .twelfth {
+        width: 50em;
+    }
+
+    .empty {
+        width: 50em;
+    }
+
+    footer {
+        width: 50em;
     }
 }

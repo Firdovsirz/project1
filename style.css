@@ -30,15 +30,15 @@ header .fa-magnifying-glass {
 nav ul {
     padding: 20px;
     display: flex;
-    /* width: 900px; */
     justify-content: space-between;
 }
 
 nav li {
     list-style-type: none;
-    padding: 0 5px;
+    padding: 5px 5px;
     border: 1px solid transparent;
     transition: 800ms;
+    margin-right: 20px;
 }
 
 nav a {
@@ -82,9 +82,9 @@ nav li:hover {
 }
 
 .btn {
-    padding: 10px 35px;
+    padding: 20px 35px;
     border: transparent;
-    border-radius: 20px;
+    border-radius: 30px;
     font-size: 15px;
     transition: 800ms;
 }
@@ -93,6 +93,7 @@ nav li:hover {
     background: linear-gradient(to right, rgb(250, 194, 250), rgb(150, 150, 250));
     cursor: pointer;
     transform: scale(1.1);
+    color: white;
 }
 
 .second {
@@ -619,6 +620,10 @@ p:nth-child(2) {
     transition: 800ms;
 }
 
+.android i {
+    margin-right: 5px;
+}
+
 .android:hover {
     cursor: pointer;
     transform: scale(1.1);
@@ -635,6 +640,10 @@ p:nth-child(2) {
     border: 1px solid white;
     border-radius: 30px;
     transition: 800ms;
+}
+
+.apple i {
+    margin-right: 5px;
 }
 
 .apple:hover {
@@ -764,7 +773,7 @@ p:nth-child(2) {
     font-weight: 200;
     font-size: 15px;
     border: 1px solid transparent;
-    padding: 0 40px;
+    padding: 10px 40px;
     background-color: white;
     border-radius: 30px;
 }
@@ -785,16 +794,23 @@ p:nth-child(2) {
 
 .basic-btn {
     margin-top: 30px;
-    padding: 5px 20px;
+    padding: 10px 20px;
     background-color: #d8cafc;
     border: transparent;
     font-size: 15px;
     font-weight: 200;
     border-radius: 20px;
+    transition: 800ms;
+}
+
+.basic-btn:hover {
+    transform: scale(1.1);
+    color: white;
+    cursor: pointer;
 }
 
 .premium {
-    height: 520px;
+    height: 400px;
     box-shadow: 2px 2px 10px #d6d6d6;
 }
 
@@ -811,7 +827,7 @@ p:nth-child(2) {
     font-weight: 200;
     font-size: 15px;
     border: 1px solid transparent;
-    padding: 0 40px;
+    padding: 10px 40px;
     background-color: white;
     border-radius: 30px;
 }
@@ -832,12 +848,19 @@ p:nth-child(2) {
 
 .premium-btn {
     margin-top: 30px;
-    padding: 5px 20px;
+    padding: 10px 20px;
     background: linear-gradient(to right, rgb(250, 194, 250), rgb(173, 173, 255));
     border: transparent;
     font-size: 15px;
     font-weight: 200;
     border-radius: 20px;
+    transition: 800ms;
+}
+
+.premium-btn:hover {
+    transform: scale(1.1);
+    color: white;
+    cursor: pointer;
 }
 
 .exclusive-head {
@@ -853,7 +876,7 @@ p:nth-child(2) {
     font-weight: 200;
     font-size: 15px;
     border: 1px solid transparent;
-    padding: 0 40px;
+    padding: 10px 40px;
     background-color: white;
     border-radius: 30px;
 }
@@ -874,12 +897,19 @@ p:nth-child(2) {
 
 .exclusive-btn {
     margin-top: 30px;
-    padding: 5px 20px;
+    padding: 10px 20px;
     background-color: #d8cafc;
     border: transparent;
     font-size: 15px;
     font-weight: 200;
     border-radius: 20px;
+    transition: 800ms;
+}
+
+.exclusive-btn:hover {
+    transform: scale(1.1);
+    color: white;
+    cursor: pointer;
 }
 
 .dollar {
@@ -1189,7 +1219,7 @@ p:nth-child(2) {
     color: white;
     font-size: 20px;
     position: absolute;
-    left: 330px;
+    left: 332px;
     border-radius: 50px;
     background: linear-gradient(to right, rgb(250, 194, 250), rgb(173, 173, 255));
     padding: 15px 40px;
@@ -1231,6 +1261,7 @@ footer li {
 .app-home li:hover {
     cursor: pointer;
     color: rgb(182, 182, 253);
+    text-decoration: underline;
 }
 
 .footer-line {
@@ -1286,12 +1317,13 @@ footer li {
 
 .contact-us button {
     margin-top: 30px;
-    padding: 10px 40px 10px 40px;
+    padding: 20px 40px;
     background: linear-gradient(to right, #d8cafc, rgb(150, 150, 250));
     border: transparent;
-    border-radius: 20px;
+    border-radius: 30px;
     color: white;
     font-weight: 200;
+    font-size: 15px;
 }
 
 .contact-us button:hover {
@@ -1327,6 +1359,82 @@ input:hover {
 
 .f-list div {
     margin-right: 50px;
+}
+
+@media (max-width: 1000px) {
+    header {
+        width: 60em;
+    }
+
+    .first {
+        width: 60em;
+        background-size: 60em;
+        height: 450px;
+    }
+
+    .second {
+        width: 60em;
+    }
+
+    .third {
+        margin-bottom: 100px;
+    }
+
+    .fourth {
+        width: 60em;
+    }
+
+    .fifth {
+        width: 60em;
+    }
+
+    .sixth {
+        width: 60em;
+    }
+
+    .seventh {
+        width: 60em;
+    }
+
+    .eighth {
+        width: 60em;
+    }
+
+    .ninth {
+        width: 60em;
+    }
+
+    .premium {
+        height: 300px;
+    }
+
+    .tenth {
+        width: 60em;
+    }
+
+    .eleventh {
+        width: 60em;
+    }
+
+    .twelfth {
+        width: 60em;
+    }
+
+    footer {
+        width: 60em;
+    }
+
+    .empty {
+        width: 60em;
+    }
+
+    .nothing {
+        width: 60em;
+    }
+
+    .twelfth-text {
+        margin-bottom: 30px;
+    }
 }
 
 @media (max-width: 1200px) {
@@ -1377,14 +1485,31 @@ input:hover {
     .third img {
         display: none;
     }
-
+    .third{
+        margin-bottom: 100px;
+    }   
+    .ninth{
+        margin-top: 100px;
+    }
+    .eighth{
+        display: none;
+    }
+    .play-text{
+        position: absolute;
+        top: 220px;
+        left: 280px;
+    }
+    
     .first_text,
     .second_text,
     .third_text,
     .fourth_text {
         display: none;
     }
-
+    .fa-play{
+        top: 150px;
+        left: 300px;
+    }
     .fourth {
         display: flex;
         justify-content: center;
@@ -1453,23 +1578,25 @@ input:hover {
 
 @media (max-width: 600px) {
     header {
-        width: 50em;
+        width: 57em;
     }
 
     .first {
-        width: 50em;
-        background-size: 50em;
+        width: 57em;
+        background-size: 57em;
+        height: 430px;
     }
 
     .second {
-        width: 50em;
+        width: 57em;
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
     .third {
-        width: 40em;
+        width: 50em;
+        margin-bottom: 100px;
     }
 
     .for-media {
@@ -1492,23 +1619,23 @@ input:hover {
     }
 
     .fourth {
-        width: 50em;
+        width: 57em;
     }
 
     .nothing {
-        width: 50em;
+        width: 57em;
     }
 
     .fifth {
-        width: 50em;
+        width: 57em;
     }
 
     .sixth {
-        width: 50em;
+        width: 57em;
     }
 
     .seventh {
-        width: 50em;
+        width: 57em;
     }
 
     .eighth {
@@ -1516,26 +1643,41 @@ input:hover {
     }
 
     .ninth {
-        width: 50em;
+        width: 57em;
+        margin-top: 100px;
     }
 
     .tenth {
-        width: 50em;
+        width: 57em;
     }
 
     .eleventh {
-        width: 50em;
+        width: 57em;
     }
 
     .twelfth {
-        width: 50em;
+        width: 57em;
+    }
+
+    .twelfth-text {
+        margin-bottom: 20px;
+    }
+
+    .twelfth-images {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .first-part img {
+        margin-bottom: 20px;
     }
 
     .empty {
-        width: 50em;
+        width: 57em;
     }
 
     footer {
-        width: 50em;
+        width: 57em;
     }
 }

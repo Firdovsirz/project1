@@ -82,10 +82,10 @@ nav li:hover {
 }
 
 .btn {
-    padding: 20px 35px;
+    padding: 20px 50px;
     border: transparent;
-    border-radius: 30px;
-    font-size: 15px;
+    border-radius: 40px;
+    font-size: 20px;
     transition: 800ms;
 }
 
@@ -126,6 +126,7 @@ nav li:hover {
     animation: rotateDots 4s ease-in-out infinite;
     position: absolute;
     top: 150px;
+    left: 450px;
     width: 600px;
     height: 600px;
 }
@@ -1219,7 +1220,7 @@ p:nth-child(2) {
     color: white;
     font-size: 20px;
     position: absolute;
-    left: 332px;
+    left: 334px;
     border-radius: 50px;
     background: linear-gradient(to right, rgb(250, 194, 250), rgb(173, 173, 255));
     padding: 15px 40px;
@@ -1485,31 +1486,37 @@ input:hover {
     .third img {
         display: none;
     }
-    .third{
+
+    .third {
         margin-bottom: 100px;
-    }   
-    .ninth{
+    }
+
+    .ninth {
         margin-top: 100px;
     }
-    .eighth{
+
+    .eighth {
         display: none;
     }
-    .play-text{
+
+    .play-text {
         position: absolute;
         top: 220px;
         left: 280px;
     }
-    
+
     .first_text,
     .second_text,
     .third_text,
     .fourth_text {
         display: none;
     }
-    .fa-play{
+
+    .fa-play {
         top: 150px;
         left: 300px;
     }
+
     .fourth {
         display: flex;
         justify-content: center;
